@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>홍길동 – 소개 및 블로그</title>
+  <link rel="icon" href="../assets/favicon.ico" />
+  <style>
+    :root { font-family: system-ui, sans-serif; }
+    body { margin: 0; line-height: 1.6; }
+    header { padding: 64px 20px; text-align: center; }
+    h1 { font-size: 2.2rem; margin: 0 0 8px; }
+    .role { opacity: .7; margin-bottom: 24px; }
+    main { max-width: 900px; margin: 0 auto; padding: 0 20px 80px; }
+    section { margin: 40px 0; }
+    .badges { display: flex; flex-wrap: wrap; gap: 8px; }
+    .badge { padding: 6px 10px; border: 1px solid #ddd; border-radius: 999px; }
+    footer { text-align: center; padding: 24px; border-top: 1px solid #eee; color: #666; }
+    a { color: inherit; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>홍길동</h1>
+    <div class="role">백엔드 개발자 · 서울</div>
+    <p>문제를 단순하게 풀어내는 걸 좋아합니다. 요즘은 Go와 분산 시스템에 관심이 많아요.</p>
+  </header>
+  <main>
+    <section>
+      <h2>About</h2>
+      <p>…간단한 자기소개를 적어주세요…</p>
+    </section>
+    <section>
+      <h2>Skills</h2>
+      <div class="badges">
+        <span class="badge">Go</span>
+        <span class="badge">Kotlin</span>
+        <span class="badge">AWS</span>
+        <span class="badge">Docker</span>
+      </div>
+    </section>
+    <section>
+      <h2>Blog</h2>
+      <article>
+        <h3>첫 번째 블로그 포스트</h3>
+        <p>이곳에 블로그 내용을 작성하세요. 예를 들어, 최근 프로젝트나 기술에 대한 생각을 공유할 수 있습니다.</p>
+      </article>
+      <article>
+        <h3>두 번째 블로그 포스트</h3>
+        <p>또 다른 블로그 내용을 작성하세요. 관심 있는 주제에 대해 자유롭게 이야기해보세요.</p>
+      </article>
+    </section>
+    <section>
+      <h2>Contact</h2>
+      <p>📧 <a href="mailto:you@example.com">you@example.com</a> · 🐙 <a href="https://github.com/yourid">GitHub</a></p>
+    </section>
+  </main>
+  <footer>© <span id="y"></span> Hong Gil-dong</footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>

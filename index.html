@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>홍길동 – 자기소개</title>
+  <link rel="icon" href="assets/favicon.ico">
+  <style>
+    /* 기본 설정 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f8f9fa;
+    }
+
+    /* 헤더 스타일 */
+    header {
+      background: white;
+      padding: 60px 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 8px;
+      color: #2c3e50;
+    }
+
+    .role {
+      font-size: 1.1rem;
+      color: #7f8c8d;
+      margin-bottom: 20px;
+    }
+
+    .intro {
+      font-size: 1.05rem;
+      color: #555;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* 메인 콘텐츠 */
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background: white;
+      padding: 30px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: #2c3e50;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #3498db;
+    }
+
+    /* Skills 뱃지 */
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .badge {
+      padding: 8px 16px;
+      background: #e3f2bd;
+      color: #1976d2;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    /* 연락처 링크 */
+    .contact-links {
+      font-size: 1.1rem;
+      line-height: 2;
+    }
+
+    .contact-links a {
+      color: #3498db;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .contact-links a:hover {
+      color: #2980b9;
+      text-decoration: underline;
+    }
+
+    /* 푸터 */
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #7f8c8d;
+      font-size: 0.9rem;
+      background: white;
+      margin-top: 40px;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    /* 반응형 디자인 */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- 💡 여기에 내 이름을 입력하세요 -->
+    <h1>홍길동</h1>
+    
+    <!-- 💡 내 직업이나 역할, 위치를 입력하세요 -->
+    <div class="role">백엔드 개발자 · 서울</div>
+    
+    <!-- 💡 간단한 자기소개를 한 줄로 작성하세요 -->
+    <p class="intro">
+      문제를 단순하게 풀어내는 걸 좋아합니다. 요즘은 Go와 분산 시스템에 관심이 많아요.
+    </p>
+  </header>
+
+  <main>
+    <!-- About 섹션 -->
+    <section>
+      <h2>📖 About</h2>
+      <!-- 💡 자세한 자기소개를 작성하세요 -->
+      <p>
+        안녕하세요! 저는 백엔드 개발자 홍길동입니다.<br>
+        간결하고 효율적인 코드를 작성하는 것을 좋아하며, 새로운 기술을 배우는 것에 열정이 있습니다.
+      </p>
+      <p style="margin-top: 12px;">
+        현재는 Go와 분산 시스템에 관심을 가지고 공부하고 있습니다.
+      </p>
+    </section>
+
+    <!-- Skills 섹션 -->
+    <section>
+      <h2>🛠 Skills</h2>
+      <!-- 💡 내가 사용할 수 있는 기술이나 관심 분야를 추가/수정하세요 -->
+      <div class="badges">
+        <span class="badge">Python</span>
+        <span class="badge">JavaScript</span>
+        <span class="badge">React</span>
+        <span class="badge">Node.js</span>
+        <span class="badge">Git</span>
+        <span class="badge">HTML/CSS</span>
+      </div>
+    </section>
+
+    <!-- Contact 섹션 -->
+    <section>
+      <h2>📬 Contact</h2>
+      <!-- 💡 내 이메일과 GitHub 주소를 입력하세요 -->
+      <div class="contact-links">
+        <p>📧 이메일: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>🐙 GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+        <p>💼 LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- 💡 내 이름으로 변경하세요 -->
+    <p>© <span id="year"></span> 홍길동. All rights reserved.</p>
+    <p style="margin-top: 8px; font-size: 0.85rem; color: #95a5a6;">
+      Made with ❤️ using GitHub Pages
+    </p>
+  </footer>
+
+  <script>
+    // 현재 연도 자동으로 표시
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>프로필 사진 포함 - 예제</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f8f9fa;
+    }
+
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    /* 프로필 이미지 스타일 */
+    .profile-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid white;
+      object-fit: cover;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 8px;
+    }
+
+    .role {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      margin-bottom: 20px;
+    }
+
+    .intro {
+      font-size: 1.05rem;
+      max-width: 600px;
+      margin: 0 auto;
+      opacity: 0.95;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background: white;
+      padding: 30px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: #2c3e50;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #667eea;
+    }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .badge {
+      padding: 8px 16px;
+      background: #e3f2fd;
+      color: #1976d2;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .contact-links {
+      font-size: 1.1rem;
+      line-height: 2;
+    }
+
+    .contact-links a {
+      color: #667eea;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .contact-links a:hover {
+      color: #764ba2;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #7f8c8d;
+      font-size: 0.9rem;
+      background: white;
+      margin-top: 40px;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .profile-image {
+        width: 120px;
+        height: 120px;
+      }
+
+      section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- 💡 이미지 경로를 내 프로필 사진으로 변경하세요 -->
+    <img src="assets/profile.jpg" alt="프로필 사진" class="profile-image">
+    
+    <h1>홍길동</h1>
+    <div class="role">웹 개발자 · 서울</div>
+    <p class="intro">
+      사용자 경험을 중시하는 개발자입니다. 아름답고 기능적인 웹사이트를 만들어요!
+    </p>
+  </header>
+
+  <main>
+    <section>
+      <h2>📖 About</h2>
+      <p>
+        안녕하세요! 웹 개발에 열정을 가진 개발자 홍길동입니다.<br>
+        사용자 친화적인 인터페이스와 깔끔한 코드를 작성하는 것을 중요하게 생각합니다.
+      </p>
+      <p style="margin-top: 12px;">
+        프론트엔드와 백엔드 모두에 관심이 있으며, 새로운 기술을 배우는 것을 즐깁니다.
+      </p>
+    </section>
+
+    <section>
+      <h2>🛠 Skills</h2>
+      <div class="badges">
+        <span class="badge">HTML/CSS</span>
+        <span class="badge">JavaScript</span>
+        <span class="badge">React</span>
+        <span class="badge">TypeScript</span>
+        <span class="badge">Node.js</span>
+        <span class="badge">Git</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>📬 Contact</h2>
+      <div class="contact-links">
+        <p>📧 이메일: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>🐙 GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+        <p>💼 LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> 홍길동. All rights reserved.</p>
+    <p style="margin-top: 8px; font-size: 0.85rem; color: #95a5a6;">
+      Made with ❤️ using GitHub Pages
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
